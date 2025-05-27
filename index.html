@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Test</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-image: url(images/alan_turing.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #2c2c2c;
+            min-height:100dvh;
+            display:flex;
+            align-items:center;
+        }
+
+        #main {
+            background-color: transparent;
+            width: 90%;
+            max-width: 700px;
+            margin: 20px 0 20px 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px; 
+            line-height: 1.5;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #2c2c2c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            #main {
+                width: 90%;
+                margin: 10px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>TESTE DE TURING</h1>
+
+        <p>
+            Você está prestes a participar de uma experiência inspirada no Teste de Turing, criado em 1950 por Alan Turing, um dos pioneiros da inteligência artificial. 
+            O teste original propunha um desafio simples: será que uma máquina pode pensar como um ser humano?
+        </p>
+        <p>
+            No experimento clássico, uma pessoa conversa com dois participantes ocultos — um humano e uma máquina — e tenta descobrir quem é quem. 
+            Se a máquina for convincente o suficiente para se passar por humana, ela “passa” no teste.
+        </p>
+
+        <h2>VERSÃO ADAPTADA</h2>
+
+        <p>Aqui, a proposta é mais leve e reflexiva. Elaborei algumas perguntas e as enviei para dois amigos humanos e as fiz a uma inteligência artificial</p>
+        <p>Seu papel? <strong>Observar as respostas, comparar os estilos e refletir:</strong></p>
+        <p>Qual resposta parece foi gerada por IA?</p>
+        <p>O que diferencia uma resposta feita por alguém real de uma feita por uma IA?</p>
+        <p>A máquina é objetiva demais? Criativa de menos? Ou surpreendentemente parecida com um ser humano?</p>
+   
+        <h2>OBJETIVO</h2>
+
+        <p>Mais do que identificar quem é quem, este experimento quer provocar uma pergunta: <strong>Até que ponto conseguimos reconhecer a presença humana por trás das palavras?</strong> 
+    </p>
+
+    <button onclick="window.location.href='question1.html'">Começar teste!</button>
+    </div>
+</body>
+</html>

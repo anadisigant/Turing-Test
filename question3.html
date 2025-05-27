@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questão 03 - Teste de Turing</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Descreva o cheiro de um lugar que você ama.</h1>
+        <p onclick="verificar(this, false)">É um cheiro salgado, defumado, como o cheiro que sai de uma marmita de domingo quando você destampa ela.</p>
+        <p id="respostaIA" onclick="verificar(this, true)">O cheiro do sítio da minha avó. É mistura de mato molhado com café passado na hora. Sempre que sinto um cheiro parecido, me dá uma paz sei lá, é como se eu tivesse lá de novo.</p>
+        <p onclick="verificar(this, false)">Não vou por aqui por que o horário não permite, mas fica ai no ar.</p>
+
+        <div class="button-group">
+            <button onclick="window.location.href='question2.html'">Voltar</button>
+            <button onclick="window.location.href='question4.html'">Próxima</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
