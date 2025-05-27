@@ -1,4 +1,4 @@
-# Teste de Turing — Versão Adaptada
+# Teste de Turing (versão adaptada)
 
 ## Objetivo
 
