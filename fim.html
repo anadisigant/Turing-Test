@@ -111,7 +111,16 @@
     </p>
 
     <button onclick="window.location.href='question1.html'">Refazer o Teste</button>
-    <button onclick="alert('Copie o link da barra de endereços para compartilhar!')">Compartilhar</button>
+    <button onclick="compartilharLink()">Compartilhar</button>
   </div>
+
+  <script>
+    function compartilharLink() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url)
+        .then(() => alert('Link copiado para a área de transferência!'))
+        .catch(() => alert('Não foi possível copiar o link.'));
+    }
+  </script>
 </body>
 </html>
