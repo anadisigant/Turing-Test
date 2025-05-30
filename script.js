@@ -20,7 +20,6 @@ function verificar(elemento, isIA) {
 
   if (isIA) {
     botao.textContent = "Próxima";
-    botao.onclick = () => window.location.href = 'question7.html';
   } else {
     botao.textContent = "Refazer";
     botao.onclick = () => {
