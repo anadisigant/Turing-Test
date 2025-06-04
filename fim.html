@@ -4,123 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fim do Teste de Turing</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Georgia', serif;
       background-image: url(images/alan_turing.jpg);
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #2c2c2c;
-      min-height: 100dvh;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      flex-direction: column;
+      padding-bottom: 40px;
     }
-
+    
     .container {
-      background-color: transparent;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    
+    footer {
+      text-align: center;
+      color: white;
+      background-color: rgba(44, 44, 44, 0.8);
+      padding: 15px;
+      border-radius: 6px;
       width: 90%;
       max-width: 700px;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      margin: 0 auto;
+      font-size: 0.9em;
     }
-
-    h2 {
-      margin-bottom: 10px;
+    
+    footer a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 5px;
     }
-
-    p {
-      margin-bottom: 10px;
-      line-height: 1.5;
-      text-align: justify;
+    
+    footer a:hover {
+      text-decoration: underline;
     }
-
-    button {
-      padding: 10px 20px;
-      background-color: #2c2c2c;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 10px;
+    
+    #explicacoes {
+      background-color: rgba(240, 240, 240, 0.7);
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
     }
-
-    button:hover {
-      background-color: #444;
+    
+    #explicacoes h3 {
+      margin-top: 0;
+      color: #2c2c2c;
     }
-
-    @media screen and (max-width: 768px) {
-      .container {
-        padding: 15px;
-      }
-
-      h2 {
-        font-size: 18px;
-      }
-
-      button {
-        width: 100%;
-      }
+    
+    #explicacoes ol {
+      padding-left: 20px;
     }
+    
   </style>
 </head>
-<body>
-  <div class="container">
-    <h2>Fim do teste e início da reflexão</h2>
+  <body>
+    <div class="container">
+      <h2>Fim do teste e início da reflexão</h2>
 
-    <p>
-      Você chegou ao fim desta jornada comparativa entre humanos e inteligência artificial.
-      Ao longo das 8 questões, foi possível observar nuances de linguagem, criatividade,
-      objetividade e até empatia elementos que, juntos, constroem o que chamamos de comunicação humana.
-    </p>
+      <p>
+        Você chegou ao fim desta jornada comparativa entre humanos e inteligência artificial.
+        Ao longo das 8 questões, foi possível observar nuances de linguagem, criatividade,
+        objetividade e até empatia - elementos que, juntos, constroem o que chamamos de comunicação humana.
+      </p>
 
-    <p><strong>E então, o que você achou?</strong></p>
-    <p>
-      As respostas da IA conseguiram se misturar às humanas?
-      Alguma delas se destacou por ser criativa ou racional?
-    </p>
+      <div id="explicacoes">
+        <h3>Como identificar respostas de IA:</h3>
+        <ol>
+          <li>Estrutura mais organizada e lógica;</li>
+          <li>Uso frequente de marcadores e enumerações;</li>
+          <li>Menos erros gramaticais e ortográficos;</li>
+          <li>Tendência a respostas mais genéricas;</li>
+          <li>Menos referências pessoais específicas</li>
+        </ol>
+        
+        <h3>Características das respostas humanas:</h3>
+        <ol>
+          <li>Mais emocionais e pessoais;</li>
+          <li>Erros gramaticais naturais;</li>
+          <li>Uso de gírias e expressões informais;</li>
+          <li>Variação maior no estilo e tom;</li>
+          <li>Referências a experiências específicas</li>
+        </ol>
+      </div>
 
-    <p>
-      Este experimento não busca vencedores. Ele propõe um olhar atento para o modo como nos expressamos
-      e interagimos, seja como humanos ou seja como máquinas.
-    </p>
+      <p><strong>Obrigado por participar!</strong></p>
 
-    <p>
-      Em um mundo onde algoritmos já escrevem textos, sugerem palavras e até conversam conosco,
-      entender essas fronteiras (ou a falta delas) se torna essencial.
-    </p>
+      <div class="button-group">
+        <button onclick="window.location.href='question1.html'">Refazer o Teste</button>
+        <button onclick="compartilharLink()">Compartilhar</button>
+      </div>
+    </div>
+    
+    <footer>
+      Desenvolvido por <a href="https://www.linkedin.com/in/karolina-disigant/" target="_blank">Ana Karolina Disigant</a>
+    </footer>
 
-    <p>
-      Se quiser, você pode rever as perguntas, refletir novamente ou até compartilhar esse teste com outras pessoas.
-      Afinal, cada nova leitura pode trazer uma nova perspectiva.
-    </p>
-
-    <p><strong>Obrigado por participar!</strong></p>
-    <p>
-      Que este teste tenha despertado não só curiosidade, mas também questionamentos
-      sobre o que nos torna únicos ou surpreendentemente parecidos com as máquinas que criamos.
-    </p>
-
-    <p>
-        Site desenvolvido por <a href="https://www.linkedin.com/in/karolina-disigant/" target="_blank" style="color: inherit;">Ana Karolina Disigant</a> em conjunto com <a href="https://chatgpt.com/" target="_blank" style="color: inherit;">ChatGPT</a> e <a href="https://grok.com/" target="_blank" style="color: inherit;">Grok</a>
-    </p>
-
-    <button onclick="window.location.href='question1.html'">Refazer o Teste</button>
-    <button onclick="compartilharLink()">Compartilhar</button>
-  </div>
-
-  <script>
-    function compartilharLink() {
-      const url = window.location.href;
-      navigator.clipboard.writeText(url)
-        .then(() => alert('Link copiado para a área de transferência!'))
-        .catch(() => alert('Não foi possível copiar o link.'));
-    }
-  </script>
-</body>
+    <script>
+      function compartilharLink() {
+        const url = window.location.href;
+        if (navigator.share) {
+          navigator.share({
+            title: 'Teste de Turing - Meu Resultado',
+            text: 'Completei o Teste de Turing e descobri como identificar respostas de IA! Tente você também:',
+            url: url
+          }).catch(console.error);
+        } else {
+          navigator.clipboard.writeText(url)
+            .then(() => alert('Link copiado para a área de transferência!'))
+            .catch(() => alert('Não foi possível copiar o link.'));
+        }
+      }
+    </script>
+  </body>
 </html>

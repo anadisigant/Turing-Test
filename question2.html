@@ -9,10 +9,13 @@
 <body>
     <div class="container">
         <h1>Como você explicaria o que é um algoritmo para alguém que nunca usou computador?</h1>
-        <p id="respostaIA" onclick="verificar(this, true)">Eu diria que é tipo uma receita de bolo. Você segue os passos certinhos pra chegar num resultado. No caso do computador, quem escreve essa receita é a gente, e ele só segue. Se errar um passo, a coisa toda dá errado.</p>
-        <p onclick="verificar(this, false)">Acho que colocaria como se fosse letrinhas escritas de uma maneira muito especifica para mandar o computador resolver um problema muito específico.</p>
-        <p onclick="verificar(this, false)">Eu diria que um algoritmo é uma série de instruções escrita por um programador e "lida" pela máquina, a fim de realizar determinada tarefa. Pode não estar 100% correto mas a pessoa iria pegar um pouco da ideia.</p>
 
+        <div class="question-container">
+            <p id="respostaIA" onclick="verificar(this, true)">Eu diria que é tipo uma receita de bolo. Você segue os passos certinhos pra chegar num resultado. No caso do computador, quem escreve essa receita é a gente, e ele só segue. Se errar um passo, a coisa toda dá errado.</p>
+            <p onclick="verificar(this, false)">Acho que colocaria como se fosse letrinhas escritas de uma maneira muito especifica para mandar o computador resolver um problema muito específico.</p>
+            <p onclick="verificar(this, false)">Eu diria que um algoritmo é uma série de instruções escrita por um programador e "lida" pela máquina, a fim de realizar determinada tarefa. Pode não estar 100% correto mas a pessoa iria pegar um pouco da ideia.</p>
+        </div>
+        
         <div class="button-group">
             <button onclick="window.location.href='question1.html'">Voltar</button>
             <button id="botaoAcao" onclick="window.location.href='question3.html'" disabled>Próxima</button>

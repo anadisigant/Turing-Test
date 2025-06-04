@@ -9,10 +9,13 @@
 <body>
     <div class="container">
         <h1>Se você pudesse alterar um único conceito científico ou tecnológico da história, qual seria e o que mudaria no mundo?</h1>
-        <p onclick="verificar(this, false)">A distância de uma ponta a outra do universo ser apenas alguns anos luz de distância.</p>
-        <p onclick="verificar(this, false)">Mudaria o conceito de perda de energia quando ela se transforma de um tipo para outro, como de cinética para elétrica. Faria essa perda nula e poderíamos criar motores perpétuos.</p>
-        <p id="respostaIA" onclick="verificar(this, true)">Queria que bateria durasse pra sempre. Tipo, zero desgaste. Imagina celular, carro elétrico, tudo funcionando sem precisar carregar. Ia mudar muita coisa.</p>
-
+        
+        <div class="question-container">
+            <p onclick="verificar(this, false)">A distância de uma ponta a outra do universo ser apenas alguns anos luz de distância.</p>
+            <p onclick="verificar(this, false)">Mudaria o conceito de perda de energia quando ela se transforma de um tipo para outro, como de cinética para elétrica. Faria essa perda nula e poderíamos criar motores perpétuos.</p>
+            <p id="respostaIA" onclick="verificar(this, true)">Queria que bateria durasse pra sempre. Tipo, zero desgaste. Imagina celular, carro elétrico, tudo funcionando sem precisar carregar. Ia mudar muita coisa.</p>
+        </div>
+        
         <div class="button-group">
             <button onclick="window.location.href='question4.html'">Voltar</button>
             <button id="botaoAcao" onclick="window.location.href='question6.html'" disabled>Próxima</button>

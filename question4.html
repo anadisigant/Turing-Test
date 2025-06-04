@@ -9,10 +9,13 @@
 <body>
     <div class="container">
         <h1>Você já mudou de ideia sobre algo importante após ler um artigo ou livro? O que foi e por quê?</h1>
-        <p id="respostaIA" onclick="verificar(this, true)">Já sim. Li um livro sobre minimalismo e repensei totalmente o jeito que eu consumo. Eu era meio compulsivo pra comprar coisa, principalmente eletrônico. Depois que li aquilo, comecei a pensar se eu realmente precisava mesmo ou só tava querendo por impulso.</p>
-        <p onclick="verificar(this, false)">Recentemente eu li o artigo de TCC de um amigo meu sobre os impactos negativos no desenvolvimento infantil provocado pelo uso de telas. Eu sabia que alguns desses malefícios existiam, mas não acreditava ser nada muito grave, pensando até nos impactos benéficos que esse uso mesmo jovem poderia ter. Depois de ler o artigo eu penso que mesmo podendo ter pontos positivos, os negativos ainda são maioria, principalmente no que diz respeito ao sistema dopaminérgico da criança.</p>
-        <p onclick="verificar(this, false)">Acho que lendo livros de utopias políticas me fez repensar um pouco sobre como a humanidade age dentro do mundo.</p>
-
+        
+        <div class="question-container">
+            <p id="respostaIA" onclick="verificar(this, true)">Já sim. Li um livro sobre minimalismo e repensei totalmente o jeito que eu consumo. Eu era meio compulsivo pra comprar coisa, principalmente eletrônico. Depois que li aquilo, comecei a pensar se eu realmente precisava mesmo ou só tava querendo por impulso.</p>
+            <p onclick="verificar(this, false)">Recentemente eu li o artigo de TCC de um amigo meu sobre os impactos negativos no desenvolvimento infantil provocado pelo uso de telas. Eu sabia que alguns desses malefícios existiam, mas não acreditava ser nada muito grave, pensando até nos impactos benéficos que esse uso mesmo jovem poderia ter. Depois de ler o artigo eu penso que mesmo podendo ter pontos positivos, os negativos ainda são maioria, principalmente no que diz respeito ao sistema dopaminérgico da criança.</p>
+            <p onclick="verificar(this, false)">Acho que lendo livros de utopias políticas me fez repensar um pouco sobre como a humanidade age dentro do mundo.</p>
+        </div>
+        
         <div class="button-group">
             <button onclick="window.location.href='question3.html'">Voltar</button>
             <button id="botaoAcao" onclick="window.location.href='question5.html'" disabled>Próxima</button>

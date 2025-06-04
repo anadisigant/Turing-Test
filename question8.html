@@ -10,14 +10,16 @@
     <div class="container">
         <h1>Na sua opinião, qual é a maior falha do sistema educacional atual? Como você a resolveria?</h1>
 
-        <p onclick="verificar(this, false)">Eu diria que é a discrepância entre a qualidade de ensino das escolas públicas e particulares. 
-        Precisaria estudar sobre o assunto para saber como resolver tal disparidade. Mas acredito que o governo deveria destinar 
-        uma verba maior para essa área, para assim poder melhorar a infraestrutura e fazer a contratação de um corpo docente 
-        completo e especializado, com um salário maior também.
-        </p>
-        <p onclick="verificar(this, false)">A política. Pra resolver era só obrigar todos os políticos a usarem apenas o serviço público.</p>
-        <p id="respostaIA" onclick="verificar(this, true)">Cara, acho que é a diferença absurda entre escola pública e privada. Quem tem grana sai na frente desde cedo. Resolver? Difícil, mas se o governo tratasse educação como prioridade de verdade, tipo investir pesado mesmo, já era um começo.</p>
-
+        <div class="question-container">
+            <p onclick="verificar(this, false)">Eu diria que é a discrepância entre a qualidade de ensino das escolas públicas e particulares. 
+            Precisaria estudar sobre o assunto para saber como resolver tal disparidade. Mas acredito que o governo deveria destinar 
+            uma verba maior para essa área, para assim poder melhorar a infraestrutura e fazer a contratação de um corpo docente 
+            completo e especializado, com um salário maior também.
+            </p>
+            <p onclick="verificar(this, false)">A política. Pra resolver era só obrigar todos os políticos a usarem apenas o serviço público.</p>
+            <p id="respostaIA" onclick="verificar(this, true)">Cara, acho que é a diferença absurda entre escola pública e privada. Quem tem grana sai na frente desde cedo. Resolver? Difícil, mas se o governo tratasse educação como prioridade de verdade, tipo investir pesado mesmo, já era um começo.</p>
+        </div>
+        
         <div class="button-group">
             <button onclick="window.location.href='question7.html'">Voltar</button>
             <button id="botaoAcao" onclick="window.location.href='fim.html'" disabled>Finalizar</button>

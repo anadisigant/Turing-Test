@@ -9,16 +9,19 @@
 <body>
     <div class="container">
         <h1>Conte um sonho estranho que teve e tente interpretá-lo com base em alguma teoria psicológica, filosófica ou científica.</h1>
-        <p id="respostaIA" onclick="verificar(this, true)">Sonhei que eu tava num shopping, mas ele era tipo infinito. Eu entrava numa loja e quando saia era outra cidade. E eu andava, andava e nunca voltava pro começo. Acho que tem a ver com ansiedade mesmo, tipo ficar preso num monte de escolha e não conseguir sair do lugar.</p>
-        <p onclick="verificar(this, false)">
-            Sonhei recentemente que eu me deitava no chão pra pegar algo que eu tinha derrubado embaixo da cama, eu esticava o braço e me espremia pra tentar pegar aquilo. 
-            Eu me espremia mais e mais embaixo da cama e o espaço se inclinava pra dentro do chão, ficava rochoso e eu não conseguia mais voltar como eu entrei. 
-            Acho que vi muito vídeo daquela galera que entra numas cavernas bem estreitas e eu sou meio claustrofóbico.
-        </p>
-        <p onclick="verificar(this, false)">O mais recente que eu lembro foi um no qual eu sair de casa no meio da noite e fiquei perdido na frei beijamin procurando algo pra comer e
-            acordei com fome. Acho que o significado era porque eu estava perdido na vida e com fome.
-        </p>
-
+        
+        <div class="question-container">
+            <p id="respostaIA" onclick="verificar(this, true)">Sonhei que eu tava num shopping, mas ele era tipo infinito. Eu entrava numa loja e quando saia era outra cidade. E eu andava, andava e nunca voltava pro começo. Acho que tem a ver com ansiedade mesmo, tipo ficar preso num monte de escolha e não conseguir sair do lugar.</p>
+            <p onclick="verificar(this, false)">
+                Sonhei recentemente que eu me deitava no chão pra pegar algo que eu tinha derrubado embaixo da cama, eu esticava o braço e me espremia pra tentar pegar aquilo. 
+                Eu me espremia mais e mais embaixo da cama e o espaço se inclinava pra dentro do chão, ficava rochoso e eu não conseguia mais voltar como eu entrei. 
+                Acho que vi muito vídeo daquela galera que entra numas cavernas bem estreitas e eu sou meio claustrofóbico.
+            </p>
+            <p onclick="verificar(this, false)">O mais recente que eu lembro foi um no qual eu sair de casa no meio da noite e fiquei perdido na frei beijamin procurando algo pra comer e
+                acordei com fome. Acho que o significado era porque eu estava perdido na vida e com fome.
+            </p>
+        </div>
+        
         <div class="button-group">
             <button onclick="window.location.href='question6.html'">Voltar</button>
             <button id="botaoAcao" onclick="window.location.href='question8.html'" disabled>Próxima</button>

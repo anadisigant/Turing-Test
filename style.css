@@ -1,40 +1,55 @@
 body {
   margin: 0;
-  padding: 20px;
+  padding: 0;
   font-family: 'Georgia', serif;
   background-image: url(../images/alan_turing.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #2c2c2c;
+  min-height: 100dvh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center; 
   align-items: center;
-  min-height: 100vh;
+  transition: all 0.3s ease;
 }
 
-.container {
-  background-color: transparent; 
+#main, .container {
+  width: 90%;
   max-width: 700px;
-  width: 100%;
+  margin: 20px auto; 
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  box-sizing: border-box;
+  animation: fadeIn 0.5s ease;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+  margin-bottom: 10px;
 }
 
 p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.question-container p {
   padding: 10px;
   margin-bottom: 15px;
   background-color: #f0f0f0;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.question-container p:hover {
+  background-color: #e0e0e0;
 }
 
 .certa {
@@ -47,19 +62,6 @@ p {
   pointer-events: none;
 }
 
-.button-group {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-button:disabled {
-  background-color: #aaa;
-  cursor: not-allowed;
-  opacity: 0.5;
-  transition: background-color 0.3s, opacity 0.3s;
-}
-
 button {
   padding: 10px 20px;
   background-color: #2c2c2c;
@@ -67,31 +69,58 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-footer {
-  padding: 10px;
-  font-size: 14px;
-  color: #2c2c2c;
+button:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
   opacity: 0.7;
-  position: absolute;
-  bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.progress-bar {
   width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #2c2c2c;
+  border-radius: 5px;
+  transition: width 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  #main, .container {
+    width: 90%;
     margin: 10px;
     padding: 15px;
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
   }
 
   .button-group {
     flex-direction: column;
-    gap: 10px;
   }
 
   button {

@@ -4,68 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turing Test</title>
+    <link rel="stylesheet" href="style.css">
     <style type="text/css">
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Georgia', serif;
             background-image: url(images/alan_turing.jpg);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #2c2c2c;
-            min-height:100dvh;
-            display:flex;
-            align-items:center;
+            justify-content: center;
+            flex-direction: column; 
+            padding-bottom: 40px; 
         }
-
+        
         #main {
-            background-color: transparent;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            background-color: rgba(44, 44, 44, 0.8);
+            padding: 10px;
+            border-radius: 6px;
             width: 90%;
             max-width: 700px;
-            margin: 20px 0 20px 20px;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            margin: 0 auto;
         }
-
-        h1, h2 {
-            margin-bottom: 10px;
+        
+        footer a {
+            color: #f0f0f0;
+            text-decoration: none;
         }
-
-        p {
-            margin-bottom: 10px; 
-            line-height: 1.5;
-            text-align: justify;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #2c2c2c;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 768px) {
-            #main {
-                width: 90%;
-                margin: 10px;
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 22px;
-            }
-
-            h2 {
-                font-size: 18px;
-            }
-
-            button {
-                width: 100%;
-            }
+        
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -79,7 +48,7 @@
         </p>
         <p>
             No experimento clássico, uma pessoa conversa com dois participantes ocultos — um humano e uma máquina — e tenta descobrir quem é quem. 
-            Se a máquina for convincente o suficiente para se passar por humana, ela “passa” no teste.
+            Se a máquina for convincente o suficiente para se passar por humana, ela "passa" no teste.
         </p>
 
         <h2>VERSÃO ADAPTADA</h2>
@@ -92,10 +61,15 @@
    
         <h2>OBJETIVO</h2>
 
-        <p>Identifique a resposta gerada por IA e ao fim pergunte-se: <strong>Até que ponto conseguimos reconhecer a presença humana por trás das palavras?</strong> 
-    </p>
+        <p>Identifique a resposta gerada por IA e ao fim pergunte-se: <strong>Até que ponto conseguimos reconhecer a presença humana por trás das palavras?</strong></p>
 
-    <button onclick="window.location.href='question1.html'">Começar teste!</button>
+        <div class="button-group">
+            <button onclick="window.location.href='question1.html'">Começar teste!</button>
+        </div>
     </div>
+    
+    <footer>
+        Site desenvolvido por <a href="https://www.linkedin.com/in/karolina-disigant/" target="_blank">Ana Karolina Disigant</a>
+    </footer>
 </body>
 </html>
